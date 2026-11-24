@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengaturan Akun - MICROTECH</title>
+  <!-- Google Fonts: Orbitron (judul, menu, nama produk) + Inter (deskripsi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS & Bootstrap Icons via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-white" style="--bs-primary:#7A0C12;--bs-primary-rgb:122,10,18;--bs-danger:#C00000;--bs-danger-rgb:192,0,0;--bs-danger-bg-subtle:#F2AAAA;--bs-body-font-family:'Inter',sans-serif;--bs-font-monospace:'Orbitron',sans-serif;">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom border-dark" style="height:95px">
+  <div class="container-fluid" style="padding-left:38px;padding-right:38px">
+    <a class="navbar-brand m-0" href="index.html" style="width:190px;flex:0 0 auto">
+      <div class="ratio ratio-16x9 bg-transparent">
+        <!-- Saran: rasio 16:9 (320x180px), logo MICROTECH versi HITAM untuk latar terang, format SVG atau PNG transparan -->
+        <img src="./assets/account/logo-microtech.jpeg" alt="Logo MICROTECH" class="object-fit-contain">
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigasi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+          <li class="nav-item"><a class="nav-link font-monospace text-primary border-bottom border-primary" href="index.html" style="font-size:16px">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link font-monospace" href="about.html" style="font-size:16px">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link font-monospace" href="produk.html" style="font-size:16px">Produk</a></li>
+          <li class="nav-item"><a class="nav-link font-monospace" href="contact.html" style="font-size:16px">Kontak</a></li>
+      </ul>
+      <div class="d-flex align-items-center justify-content-center gap-3 pb-2 pb-lg-0">
+        <a href="keranjang.html" class="btn bg-primary text-white rounded-circle position-relative p-2 lh-1" aria-label="Keranjang">
+          <i class="bi bi-cart3 fs-5"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">5</span>
+        </a>
+        <a href="account.html" class="text-dark fw-bold font-monospace text-decoration-underline" style="font-size:16px">Hallo Yoseph!</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HALAMAN PENGATURAN AKUN -->
+<main class="container-fluid" style="padding-top:39px;padding-bottom:56px;padding-left:54px;padding-right:54px">
+  <h1 class="fw-bold font-monospace" style="font-size:28px;margin-bottom:40px">Pengaturan</h1>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <section class="card" style="border-radius:12px;border-color:#b4b4b4">
+      <!-- Header kartu -->
+      <header class="card-header bg-white d-flex align-items-center" style="height:107px;padding-left:22px;padding-right:22px;column-gap:30px;border-radius:12px 12px 0 0">
+        <div class="d-flex align-items-center justify-content-center text-primary" style="width:67px;height:67px;border-radius:14px;padding:0;background:#F2AAAA"><i class="bi bi-person-fill fs-3"></i></div>
+        <h2 class="fw-bold font-monospace mb-0" style="font-size:24px">Informasi Akun &amp; Kontak</h2>
+      </header>
+
+      <div class="card-body" style="padding-top:20px;padding-bottom:44px;padding-left:27px;padding-right:47px">
+        <!-- Avatar -->
+        <div class="align-items-center d-flex" style="column-gap:48px;margin-bottom:30px">
+          <div class="" style="width:125px;flex:0 0 auto">
+            <div class="ratio ratio-1x1 bg-secondary-subtle rounded rounded-circle overflow-hidden border border-2 border-secondary">
+              <!-- Saran: rasio 1:1 (400x400px), foto profil pengguna, format WEBP/JPG/PNG -->
+              <img src="./assets/account/jezkajezka.jpeg" alt="Foto profil @setan_ireng" class="object-fit-cover">
+            </div>
+          </div>
+          <div class="col">
+            <div class="fw-bold font-monospace text-uppercase" style="font-size:22px">Setan Ireng</div>
+            <div class="text-secondary" style="font-size:18px">@setan_ireng</div>
+            <label for="avatarUpload" class="text-primary d-inline-flex align-items-center gap-2" role="button" style="font-size:16px">
+              <i class="bi bi-camera-fill"></i> Pilih Avatar / Upload Foto
+            </label>
+            <input type="file" id="avatarUpload" name="avatar" class="d-none" accept=".jpg,.jpeg,.png,.webp">
+            <div class="" style="font-size:18px;color:#a0a0a0">Mendukung JPG, PNG dan WEBP</div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="d-flex flex-wrap" style="column-gap:46px;row-gap:28px">
+          <div class="" style="width:530px;max-width:100%">
+            <label for="username" class="form-label fw-bold" style="font-size:18px;margin-bottom:12px">Username</label>
+            <input type="text" id="username" name="username" class="form-control form-control-sm bg-light" value="@setan_ireng" readonly style="height:27px;font-size:14px;border-radius:4px;border-color:#a0a0a0">
+            <div class="form-text" style="font-size:11px;color:#8a8a8a;margin-top:12px">Username bersifat unik dan tidak dapat diubah</div>
+          </div>
+          <div class="" style="width:530px;max-width:100%">
+            <label for="email" class="form-label fw-bold" style="font-size:18px;margin-bottom:12px">Email</label>
+            <input type="email" id="email" name="email" class="form-control form-control-sm" style="height:27px;font-size:14px;border-radius:4px;border-color:#a0a0a0">
+            <div class="form-text" style="font-size:11px;color:#8a8a8a;margin-top:12px">Pastikan email yang Anda masukkan benar, karena kami akan mengirimkan infromasi ke email ini</div>
+          </div>
+          <div class="" style="width:530px;max-width:100%">
+            <label for="nama" class="form-label fw-medium" style="font-size:18px;margin-bottom:12px">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" class="form-control form-control-sm" value="" style="height:27px;font-size:14px;border-radius:4px;border-color:#a0a0a0">
+            <div class="form-text" style="font-size:11px;color:#8a8a8a;margin-top:12px">Gunakan nama yang sesuai dengan KTP atau Kartu Keluarga</div>
+          </div>
+          <div style="width:530px;max-width:100%">
+            <label for="telepon" class="form-label fw-medium" style="font-size:18px;margin-bottom:12px">Nomor Telepon / WhatsApp</label>
+            <div class="input-group input-group-sm border rounded-2 overflow-hidden" style="border-color:#a0a0a0 !important;height:34px">
+              <!-- Dropdown 5 Negara ASEAN (Bendera + Kode Negara Terkunci) -->
+              <select name="kode_negara" aria-label="Pilih Negara ASEAN" class="form-select border-0 bg-white text-dark fw-normal shadow-none py-0 ps-2 pe-4" style="flex:0 0 auto;width:96px;font-size:14px">
+                <option value="+62" selected>&#127470;&#127465; +62</option>
+                <option value="+60">&#127474;&#127486; +60</option>
+                <option value="+65">&#127480;&#127468; +65</option>
+                <option value="+66">&#127481;&#127469; +66</option>
+                <option value="+84">&#127483;&#127475; +84</option>
+              </select>
+
+              <!-- Garis Pemisah Vertikal Tipis (Persis Seperti Referensi) -->
+              <span class="border-start my-1" style="border-color:#ced4da !important"></span>
+
+              <!-- Input Nomor Setelah Kode Negara -->
+              <input type="number" id="telepon" name="telepon" class="form-control border-0 shadow-none py-0 ps-2" placeholder="" pattern="[0-9]*" inputmode="numeric" style="font-size:14px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="d-flex justify-content-end" style="margin-top:37px">
+      <button href="index.html" type="submit" class="btn bg-danger text-white fw-bold font-monospace" style="width:280px;height:44px;border-radius:6px;font-size:16px;padding:0">Simpan Data Akun</button>
+    </div>
+  </form>
+</main>
+
+  <!-- Bootstrap 5 JS Bundle (wajib sebelum </body>) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
