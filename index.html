@@ -19,7 +19,6 @@
   <div class="container-fluid" style="padding-left:42px;padding-right:42px">
     <a class="navbar-brand m-0" href="index.html" style="width:165px;flex:0 0 auto">
       <div class="ratio ratio-16x9 bg-transparent" style="--bs-aspect-ratio:30%">
-        <!-- Saran: rasio sekitar 3,3:1 (330x100px), logo MICROTECH versi PUTIH untuk latar gelap (saat scroll otomatis diganti logo-microtech-black.png), format SVG atau PNG transparan -->
         <img id="navLogo" data-logo-scroll="./assets/landing_page/logo-microtech-white.png" src="./assets/landing_page/logo-microtech-white.png" alt="Logo MICROTECH" class="object-fit-contain">
       </div>
     </a>
@@ -47,7 +46,6 @@
 <!-- SECTION 1: HERO + CAROUSEL CARD PRODUK + STATISTIK -->
 <section id="section-1" class="position-relative overflow-hidden bg-black text-white" style="min-height:628px">
   <div class="ratio ratio-16x9 position-absolute top-0 start-0 w-100 h-100 bg-dark rounded-0">
-    <!-- Saran: rasio 16:9 (1920x1080px), foto kota malam hari, format WEBP/JPG -->
     <img src="./assets/landing_page/bg-beranda-tentang.jpg" alt="Latar hero kota malam" class="object-fit-cover">
   </div>
   <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
@@ -63,14 +61,13 @@
         </div>
       </div>
       <div class="col-lg-5">
-        <!-- Carousel auto-slide 3 detik. Card = area yang bergeser; indikator di bawah card (tetap di dalam .carousel agar titik aktif ikut berganti) -->
+        <!-- Carousel auto-slide 3 detik -->
         <div id="carouselProduk" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="card border-0 shadow bg-light text-dark" style="border-radius:16px">
             <div class="card-body p-3">
               <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="ratio ratio-16x9 rounded bg-light">
-            <!-- Saran: rasio 16:9 (800x450px), foto produk latar putih/transparan, format WEBP atau PNG -->
             <img src="./assets/landing_page/laptop-rog.png" alt="Lenovo Legion 5 15IRX10 - 43ID" class="object-fit-contain">
           </div>
           <h6 class="fw-bold font-monospace mt-3 mb-2">Lenovo Legion 5 15IRX10 - 43ID</h6>
@@ -89,7 +86,6 @@
         </div>
         <div class="carousel-item">
           <div class="ratio ratio-16x9 rounded bg-light">
-            <!-- Saran: rasio 16:9 (800x450px), foto produk latar putih/transparan, format WEBP atau PNG -->
             <img src="./assets/landing_page/laptop-rog.png" alt="ASUS TUF Gaming F15 FX507 - 165Hz" class="object-fit-contain">
           </div>
           <h6 class="fw-bold font-monospace mt-3 mb-2">ASUS TUF Gaming F15 FX507 - 165Hz</h6>
@@ -108,7 +104,6 @@
         </div>
         <div class="carousel-item">
           <div class="ratio ratio-16x9 rounded bg-light">
-            <!-- Saran: rasio 16:9 (800x450px), foto produk latar putih/transparan, format WEBP atau PNG -->
             <img src="./assets/landing_page/laptop-rog.png" alt="Acer Nitro V 15 ANV15-51 - 58QK" class="object-fit-contain">
           </div>
           <h6 class="fw-bold font-monospace mt-3 mb-2">Acer Nitro V 15 ANV15-51 - 58QK</h6>
@@ -238,7 +233,7 @@
   </div>
 </section>
 
-<!-- SECTION 3: PRODUK UNGGULAN (carousel hanya bergerak saat panah ditekan) + BENEFIT -->
+<!-- SECTION 3: PRODUK UNGGULAN -->
 <section id="section-3" class="container-fluid" style="padding-left:42px;padding-right:42px;padding-top:72px;padding-bottom:72px">
   <div class="d-flex justify-content-between align-items-end mb-4">
     <div>
@@ -267,7 +262,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card btn btn-outline-danger bg-white text-dark h-100 w-100 shadow-sm p-0" style="border-radius:16px;--bs-btn-border-color:var(--bs-border-color);--bs-btn-hover-bg:keranjang.htmlffffff;--bs-btn-hover-color:#212529;--bs-btn-active-bg:#ffffff;--bs-btn-active-color:#212529;--bs-btn-active-border-color:var(--bs-danger)" onmouseover="this.querySelector('img').style.transform='scale(1.08)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
+              <div class="card btn btn-outline-danger bg-white text-dark h-100 w-100 shadow-sm p-0" style="border-radius:16px;--bs-btn-border-color:var(--bs-border-color);--bs-btn-hover-bg:#ffffff;--bs-btn-hover-color:#212529;--bs-btn-active-bg:#ffffff;--bs-btn-active-color:#212529;--bs-btn-active-border-color:var(--bs-danger)" onmouseover="this.querySelector('img').style.transform='scale(1.08)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
                 <div class="card-body d-flex flex-column align-items-center text-center">
                   <div class="ratio ratio-1x1 rounded bg-white w-100 overflow-hidden d-flex align-items-center justify-content-center">
                     <img src="./assets/landing_page/gmbr-produk2.jpg" alt="hEX S Routerboard" class="object-fit-contain m-auto p-2" style="transition:transform 0.3s ease">
@@ -310,7 +305,7 @@
             </div>
           </div>
         </div>
-        <!-- Slide 2 (copy struktur row di atas jika ingin isi yang sama) -->
+        <!-- Slide 2 -->
         <div class="carousel-item">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 justify-content-center">
             <div class="col">
@@ -467,7 +462,7 @@
   </div>
 </section>
 
-<!-- SECTION 4: CAROUSEL BRAND PARTNER (auto-slide 3 detik; data dummy = logo-mitra1..6 diputar) -->
+<!-- SECTION 4: CAROUSEL BRAND PARTNER -->
 <section id="section-4" class="container-fluid" style="padding-left:42px;padding-right:42px;padding-top:72px;padding-bottom:72px">
   <h2 class="fw-bold font-monospace mb-4" style="font-size:32px;line-height:1.25">Brand yang kami jual</h2>
   <div id="carouselBrand" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -477,7 +472,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra1.jpg" alt="Logo Lenovo" class="object-fit-contain">
               </div>
             </div>
@@ -485,7 +479,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra2.jpg" alt="Logo MikroTik" class="object-fit-contain">
               </div>
             </div>
@@ -493,7 +486,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra3.jpg" alt="Logo Samsung" class="object-fit-contain">
               </div>
             </div>
@@ -501,7 +493,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra4.jpg" alt="Logo ASUS" class="object-fit-contain">
               </div>
             </div>
@@ -509,7 +500,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra5.jpg" alt="Logo ADATA" class="object-fit-contain">
               </div>
             </div>
@@ -517,7 +507,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra6.jpg" alt="Logo NVIDIA" class="object-fit-contain">
               </div>
             </div>
@@ -529,7 +518,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra3.jpg" alt="Logo Samsung" class="object-fit-contain">
               </div>
             </div>
@@ -537,7 +525,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra4.jpg" alt="Logo ASUS" class="object-fit-contain">
               </div>
             </div>
@@ -545,7 +532,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra5.jpg" alt="Logo ADATA" class="object-fit-contain">
               </div>
             </div>
@@ -553,7 +539,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra6.jpg" alt="Logo NVIDIA" class="object-fit-contain">
               </div>
             </div>
@@ -561,7 +546,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra1.jpg" alt="Logo Lenovo" class="object-fit-contain">
               </div>
             </div>
@@ -569,7 +553,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra2.jpg" alt="Logo MikroTik" class="object-fit-contain">
               </div>
             </div>
@@ -581,7 +564,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra5.jpg" alt="Logo ADATA" class="object-fit-contain">
               </div>
             </div>
@@ -589,7 +571,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra6.jpg" alt="Logo NVIDIA" class="object-fit-contain">
               </div>
             </div>
@@ -597,7 +578,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra1.jpg" alt="Logo Lenovo" class="object-fit-contain">
               </div>
             </div>
@@ -605,7 +585,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra2.jpg" alt="Logo MikroTik" class="object-fit-contain">
               </div>
             </div>
@@ -613,7 +592,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra3.jpg" alt="Logo Samsung" class="object-fit-contain">
               </div>
             </div>
@@ -621,7 +599,6 @@
           <div class="col">
             <div class="bg-white border rounded-3 shadow-sm p-3">
               <div class="ratio ratio-1x1 bg-transparent">
-                <!-- Saran: rasio 1:1 (400x400px), logo brand latar transparan/putih, format PNG, JPG atau SVG -->
                 <img src="./assets/landing_page/logo-mitra4.jpg" alt="Logo ASUS" class="object-fit-contain">
               </div>
             </div>
@@ -690,7 +667,6 @@
       <div class="d-flex flex-wrap justify-content-center" style="gap:48px">
         <div class="card bg-black text-white border border-primary overflow-hidden" style="border-radius:16px;width:360px;max-width:100%">
           <div class="ratio ratio-1x1 rounded-0 bg-dark" style="--bs-aspect-ratio:125%">
-            <!-- Saran: rasio 4:5 potret (800x1000px), foto potret latar gelap/merah, format WEBP atau JPG -->
             <img src="./assets/beranda/Founder-Microtech-Yoseph.jpg" alt="Yoseph Nainggolan" class="object-fit-cover" style="object-position:top">
           </div>
           <div class="card-body p-4">
@@ -707,7 +683,6 @@
         </div>
         <div class="card bg-black text-white border border-primary overflow-hidden" style="border-radius:16px;width:360px;max-width:100%">
           <div class="ratio ratio-1x1 rounded-0 bg-dark" style="--bs-aspect-ratio:125%">
-            <!-- Saran: rasio 4:5 potret (800x1000px), foto potret latar gelap/merah, format WEBP atau JPG -->
             <img src="./assets/beranda/Founder-Microtech-Jesen.png" alt="Jesen Pakpahan" class="object-fit-cover" style="object-position:top">
           </div>
           <div class="card-body p-4">
@@ -724,7 +699,6 @@
         </div>
         <div class="card bg-black text-white border border-primary overflow-hidden" style="border-radius:16px;width:360px;max-width:100%">
           <div class="ratio ratio-1x1 rounded-0 bg-dark" style="--bs-aspect-ratio:125%">
-            <!-- Saran: rasio 4:5 potret (800x1000px), foto potret latar gelap/merah, format WEBP atau JPG -->
             <img src="./assets/beranda/Founder-Microtech-Matthew.png" alt="Matthew Metekohy" class="object-fit-cover" style="object-position:top">
           </div>
           <div class="card-body p-4">
@@ -741,7 +715,6 @@
         </div>
         <div class="card bg-black text-white border border-primary overflow-hidden" style="border-radius:16px;width:360px;max-width:100%">
           <div class="ratio ratio-1x1 rounded-0 bg-dark" style="--bs-aspect-ratio:125%">
-            <!-- Saran: rasio 4:5 potret (800x1000px), foto potret latar gelap/merah, format WEBP atau JPG -->
             <img src="./assets/beranda/Founder-Microtech-Septuaginta.jpeg" alt="Septuaginta Clea" class="object-fit-cover" style="object-position:top">
           </div>
           <div class="card-body p-4">
@@ -760,7 +733,7 @@
     </div>
   </section>
 
-  <!-- FOOTER (latar luar mengikuti latar section founders; kartu dalam tetap gelap) -->
+  <!-- FOOTER -->
   <footer class="p-3 font-monospace text-white">
     <div class="bg-dark bg-gradient text-white" style="--bs-gradient:linear-gradient(90deg,#0d0d16 0%,#2a0a14 100%);border-radius:24px;padding:48px">
       <div class="row g-4 align-items-start">

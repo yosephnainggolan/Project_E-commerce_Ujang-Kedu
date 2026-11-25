@@ -19,7 +19,6 @@
   <div class="container-fluid" style="padding-left:38px;padding-right:38px">
     <a class="navbar-brand m-0" href="index.html" style="width:190px;flex:0 0 auto">
       <div class="ratio ratio-16x9 bg-transparent">
-        <!-- Saran: rasio 16:9 (320x180px), logo MICROTECH versi HITAM untuk latar terang, format SVG atau PNG transparan -->
         <img src="./assets/account/logo-microtech.jpeg" alt="Logo MICROTECH" class="object-fit-contain">
       </div>
     </a>
@@ -61,7 +60,6 @@
         <div class="align-items-center d-flex" style="column-gap:48px;margin-bottom:30px">
           <div class="" style="width:125px;flex:0 0 auto">
             <div class="ratio ratio-1x1 bg-secondary-subtle rounded rounded-circle overflow-hidden border border-2 border-secondary">
-              <!-- Saran: rasio 1:1 (400x400px), foto profil pengguna, format WEBP/JPG/PNG -->
               <img src="./assets/account/jezkajezka.jpeg" alt="Foto profil @setan_ireng" class="object-fit-cover">
             </div>
           </div>
@@ -96,7 +94,7 @@
           <div style="width:530px;max-width:100%">
             <label for="telepon" class="form-label fw-medium" style="font-size:18px;margin-bottom:12px">Nomor Telepon / WhatsApp</label>
             <div class="input-group input-group-sm border rounded-2 overflow-hidden" style="border-color:#a0a0a0 !important;height:34px">
-              <!-- Dropdown 5 Negara ASEAN (Bendera + Kode Negara Terkunci) -->
+              <!-- Dropdown Negara -->
               <select name="kode_negara" aria-label="Pilih Negara ASEAN" class="form-select border-0 bg-white text-dark fw-normal shadow-none py-0 ps-2 pe-4" style="flex:0 0 auto;width:96px;font-size:14px">
                 <option value="+62" selected>&#127470;&#127465; +62</option>
                 <option value="+60">&#127474;&#127486; +60</option>
@@ -105,10 +103,8 @@
                 <option value="+84">&#127483;&#127475; +84</option>
               </select>
 
-              <!-- Garis Pemisah Vertikal Tipis (Persis Seperti Referensi) -->
               <span class="border-start my-1" style="border-color:#ced4da !important"></span>
 
-              <!-- Input Nomor Setelah Kode Negara -->
               <input type="number" id="telepon" name="telepon" class="form-control border-0 shadow-none py-0 ps-2" placeholder="" pattern="[0-9]*" inputmode="numeric" style="font-size:14px">
             </div>
           </div>
