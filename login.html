@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Microtech | Login &amp; Register</title>
+
+  <!-- Bootstrap 5 + Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white" style="--bs-body-font-family:'Montserrat',sans-serif">
+
+  <main class="position-relative overflow-hidden min-vh-100">
+
+    <!-- LAPISAN FORM: posisinya tetap -->
+    <div class="row g-0">
+
+      <!-- Kiri: Login & Forgot Password -->
+      <div class="col-12 col-md-6 collapse show mode-register d-md-block min-vh-100" style="transition:opacity .7s">
+        <div id="leftPanel" class="carousel" data-bs-interval="false" data-bs-touch="false" data-bs-keyboard="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+        <section class="d-flex min-vh-100 flex-column align-items-center justify-content-center text-center px-4 px-lg-5 py-5" aria-label="Login">
+          <h1 class="fw-bold text-black mb-3">Login</h1>
+          <div class="d-flex justify-content-center align-items-center">
+        <a href="#" class="btn btn-link link-dark text-decoration-none px-4 py-0 fs-2 d-flex align-items-center" aria-label="Login with Google"><svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></a>
+        <a href="#" class="btn btn-link link-dark text-decoration-none px-4 py-0 fs-2 d-flex align-items-center" aria-label="Login with Apple"><i class="bi bi-apple"></i></a>
+        <a href="#" class="btn btn-link link-dark text-decoration-none px-4 py-0 fs-2 d-flex align-items-center" aria-label="Login with Microsoft"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="#0078D4" d="M0 0h11.4v11.4H0zM12.6 0H24v11.4H12.6zM0 12.6h11.4V24H0zM12.6 12.6H24V24H12.6z"/></svg></a>
+            </div>
+          <p class="small my-3">Login With Email &amp; Password</p>
+          <form class="w-100" style="max-width:460px" action="index.html">
+            <div class="input-group input-group-lg mb-3">
+              <span class="input-group-text bg-body-secondary border-0"><i class="bi bi-person-fill"></i></span>
+              <input type="email" class="form-control bg-body-secondary border-0 fs-6" placeholder="Masukkan email" aria-label="Email" autocomplete="email" required>
+            </div>
+            <div class="input-group input-group-lg mb-3">
+              <span class="input-group-text bg-body-secondary border-0"><i class="bi bi-lock-fill"></i></span>
+              <input type="password" class="form-control bg-body-secondary border-0 fs-6" placeholder="Masukkan Password" aria-label="Password" autocomplete="current-password" required>
+            </div>
+            <div class="d-flex justify-content-between align-items-center my-3">
+              <div class="form-check text-start mb-0">
+                <input class="form-check-input" type="checkbox" id="remember-signin">
+                <label class="form-check-label small fw-semibold" for="remember-signin">Remember me</label>
+              </div>
+              <button type="button" class="btn btn-link btn-sm text-danger fw-bold text-decoration-none p-0 align-baseline" data-bs-target="#leftPanel" data-bs-slide-to="1">Forget Password?</button>
+            </div>
+            <button type="submit" class="btn btn-danger rounded-3 fw-semibold text-uppercase px-5 py-3" style="--bs-btn-bg:#ff1010;--bs-btn-border-color:#ff1010;--bs-btn-hover-bg:#d60b0b;--bs-btn-hover-border-color:#d60b0b;--bs-btn-active-bg:#d60b0b;--bs-btn-active-border-color:#d60b0b">Login</button>
+          </form>
+          <p class="small mt-4 mb-0 d-md-none">Belum punya akun? <button type="button" class="btn btn-link btn-sm text-danger fw-bold text-decoration-none p-0 align-baseline" data-bs-toggle="collapse" data-bs-target=".mode-register">Register</button></p>
+        </section>
+            </div>
+            <div class="carousel-item">
+        <section class="d-flex min-vh-100 flex-column align-items-center justify-content-center text-center px-4 px-lg-5 py-5" aria-label="Forgot password">
+          <h1 class="fw-bold text-black mb-3">Forgot Password</h1>
+          <p class="mb-4" style="max-width:380px">Masukkan email yang terdaftar. Kami akan mengirim link untuk membuat password baru.</p>
+          <div class="alert alert-success text-start collapse w-100" style="max-width:460px" id="forgotSuccess" role="alert">
+        <div class="vstack">
+          <h4 class="alert-heading mb-2">Link terkirim!</h4>
+          <p>Kami sudah mengirim link reset password ke emailmu. Buka inbox, lalu ikuti petunjuk di email tersebut untuk membuat password baru.</p>
+          <hr class="my-3">
+          <p class="mb-0">Belum menerima email? Cek folder spam, atau coba kirim ulang beberapa menit lagi.</p>
+        </div>
+      </div>
+          <div class="w-100" style="max-width:460px">
+            <div class="input-group input-group-lg mb-3">
+              <span class="input-group-text bg-body-secondary border-0"><i class="bi bi-person-fill"></i></span>
+              <input type="email" class="form-control bg-body-secondary border-0 fs-6" placeholder="Masukkan email" aria-label="Email" autocomplete="email">
+            </div>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#forgotSuccess" aria-expanded="false" aria-controls="forgotSuccess" class="btn btn-danger rounded-3 fw-semibold text-uppercase px-5 py-3" style="--bs-btn-bg:#ff1010;--bs-btn-border-color:#ff1010;--bs-btn-hover-bg:#d60b0b;--bs-btn-hover-border-color:#d60b0b;--bs-btn-active-bg:#d60b0b;--bs-btn-active-border-color:#d60b0b">Send Link</button>
+          </div>
+          <p class="mt-4 mb-0"><button type="button" class="btn btn-link btn-sm text-danger fw-bold text-decoration-none p-0 align-baseline" data-bs-target="#leftPanel" data-bs-slide-to="0">Back to Login</button></p>
+        </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kanan: Register -->
+      <div class="col-12 col-md-6 collapse mode-register d-md-block min-vh-100" style="transition:opacity .7s">
+        <section class="d-flex min-vh-100 flex-column align-items-center justify-content-center text-center px-4 px-lg-5 py-5" aria-label="Register">
+          <h1 class="fw-bold text-black mb-3">Register</h1>
+          <div class="d-flex justify-content-center align-items-center">
+        <a href="#" class="btn btn-link link-dark text-decoration-none px-4 py-0 fs-2 d-flex align-items-center" aria-label="Register with Google"><svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></a>
+        <a href="#" class="btn btn-link link-dark text-decoration-none px-4 py-0 fs-2 d-flex align-items-center" aria-label="Register with Apple"><i class="bi bi-apple"></i></a>
+        <a href="#" class="btn btn-link link-dark text-decoration-none px-4 py-0 fs-2 d-flex align-items-center" aria-label="Register with Microsoft"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="#0078D4" d="M0 0h11.4v11.4H0zM12.6 0H24v11.4H12.6zM0 12.6h11.4V24H0zM12.6 12.6H24V24H12.6z"/></svg></a>
+            </div>
+          <p class="small my-3">Register with E-mail</p>
+          <form class="w-100" style="max-width:460px" action="login.html">
+            <div class="input-group input-group-lg mb-3">
+              <span class="input-group-text bg-body-secondary border-0"><i class="bi bi-person-fill"></i></span>
+              <input type="email" class="form-control bg-body-secondary border-0 fs-6" placeholder="Masukkan email" aria-label="Email" autocomplete="email" required>
+            </div>
+            <div class="input-group input-group-lg mb-3">
+              <span class="input-group-text bg-body-secondary border-0"><i class="bi bi-lock-fill"></i></span>
+              <input type="password" class="form-control bg-body-secondary border-0 fs-6" placeholder="Masukkan Password (min. 6 karakter)" aria-label="Password" autocomplete="new-password" minlength="6" required>
+            </div>
+            <div class="input-group input-group-lg mb-3">
+              <span class="input-group-text bg-body-secondary border-0"><i class="bi bi-lock-fill"></i></span>
+              <input type="password" class="form-control bg-body-secondary border-0 fs-6" placeholder="Konfirmasi Password" aria-label="Konfirmasi password" autocomplete="new-password" minlength="6" required>
+            </div>
+            <div class="d-flex justify-content-between align-items-center my-3">
+              <div class="form-check text-start mb-0">
+                <input class="form-check-input" type="checkbox" id="remember-register">
+                <label class="form-check-label small fw-semibold" for="remember-register">Remember me</label>
+              </div>
+              <button type="button" class="btn btn-link btn-sm text-danger fw-bold text-decoration-none p-0" data-bs-toggle="collapse" data-bs-target=".mode-register"><span data-bs-target="#leftPanel" data-bs-slide-to="1">Forget Password?</span></button>
+            </div>
+            <button type="submit" class="btn btn-danger rounded-3 fw-semibold text-uppercase px-5 py-3" style="--bs-btn-bg:#ff1010;--bs-btn-border-color:#ff1010;--bs-btn-hover-bg:#d60b0b;--bs-btn-hover-border-color:#d60b0b;--bs-btn-active-bg:#d60b0b;--bs-btn-active-border-color:#d60b0b">Register</button>
+          </form>
+          <p class="small mt-4 mb-0 d-md-none">Sudah punya akun? <button type="button" class="btn btn-link btn-sm text-danger fw-bold text-decoration-none p-0 align-baseline" data-bs-toggle="collapse" data-bs-target=".mode-register">Login</button></p>
+        </section>
+      </div>
+    </div>
+
+    <!-- LAPISAN GAMBAR: bergeser setengah layar (Collapse horizontal Bootstrap) -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 d-none d-md-flex pe-none">
+      <!-- Pengganjal: saat menyusut, panel gambar bergeser ke kiri -->
+      <div class="collapse collapse-horizontal show mode-register flex-shrink-0" style="transition:width .7s cubic-bezier(.65,0,.35,1)">
+        <div style="width:50vw"></div>
+      </div>
+      <aside class="w-50 flex-shrink-0 pe-auto d-flex flex-column align-items-center justify-content-center text-center text-white bg-dark" style="background:linear-gradient(rgba(10,0,0,.45),rgba(10,0,0,.55)),url('assets/login/bg-login.png') 12% center/cover no-repeat">
+          <div class="collapse show mode-register" style="transition:opacity .7s">
+            <div class="px-5 py-3">
+              <h2 class="display-6 fw-bold text-white mb-3">Welcome To<br>Microtech</h2>
+              <p class="fs-5 mb-4">Register now and enjoy our site</p>
+              <button type="button" class="btn btn-outline-light rounded-3 fw-semibold text-uppercase px-5 py-3" data-bs-toggle="collapse" data-bs-target=".mode-register">Register</button>
+            </div>
+          </div>
+          <div class="collapse mode-register" style="transition:opacity .7s">
+            <div class="px-5 py-3">
+              <h2 class="display-6 fw-bold text-white mb-3">Welcome To<br>Microtech</h2>
+              <p class="fs-5 mb-4">Login With Email &amp; Password</p>
+              <button type="button" class="btn btn-outline-light rounded-3 fw-semibold text-uppercase px-5 py-3" data-bs-toggle="collapse" data-bs-target=".mode-register">Login</button>
+            </div>
+          </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

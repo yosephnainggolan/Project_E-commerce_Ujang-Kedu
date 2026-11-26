@@ -15,11 +15,11 @@
 <body class="bg-white" style="--bs-primary:#7A0C12;--bs-primary-rgb:122,10,18;--bs-danger:#C00000;--bs-danger-rgb:192,0,0;--bs-danger-bg-subtle:#F2AAAA;--bs-body-font-family:'Inter',sans-serif;--bs-font-monospace:'Orbitron',sans-serif;">
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white border-bottom border-dark" style="height:95px">
-  <div class="container-fluid" style="padding-left:38px;padding-right:38px">
-    <a class="navbar-brand m-0" href="index.html" style="width:190px;flex:0 0 auto">
-      <div class="ratio ratio-16x9 bg-transparent">
-        <img src="./assets/account/logo-microtech.jpeg" alt="Logo MICROTECH" class="object-fit-contain">
+<nav id="mainNav" class="navbar navbar-expand-lg sticky-top bg-white border-bottom border-dark" style="min-height:80px;--bs-font-monospace:'Orbitron',sans-serif">
+  <div class="container-fluid" style="padding-left:42px;padding-right:42px">
+    <a class="navbar-brand m-0" href="index.html" style="width:220px;flex:0 0 auto">
+      <div class="ratio ratio-16x9 bg-transparent" style="--bs-aspect-ratio:30%;width:165px">
+        <img id="navLogo" src="assets/kontak/logo-microtech-hitam.png" alt="Logo MICROTECH" class="object-fit-contain">
       </div>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigasi">
@@ -27,17 +27,31 @@
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav mx-auto gap-lg-4 text-center">
-          <li class="nav-item"><a class="nav-link font-monospace text-primary border-bottom border-primary" href="index.html" style="font-size:16px">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link font-monospace" href="about.html" style="font-size:16px">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link font-monospace" href="produk.html" style="font-size:16px">Produk</a></li>
-          <li class="nav-item"><a class="nav-link font-monospace" href="contact.html" style="font-size:16px">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link font-monospace text-danger border-bottom border-danger" href="beranda.html" aria-current="page" style="font-size:14px">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link font-monospace" href="about.html" style="font-size:14px">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link font-monospace" href="produk.html" style="font-size:14px">Produk</a></li>
+        <li class="nav-item"><a class="nav-link font-monospace" href="contact.html" style="font-size:14px">Kontak</a></li>
       </ul>
-      <div class="d-flex align-items-center justify-content-center gap-3 pb-2 pb-lg-0">
-        <a href="keranjang.html" class="btn bg-primary text-white rounded-circle position-relative p-2 lh-1" aria-label="Keranjang">
-          <i class="bi bi-cart3 fs-5"></i>
-          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">5</span>
-        </a>
-        <a href="account.html" class="text-dark fw-bold font-monospace text-decoration-underline" style="font-size:16px">Hallo Yoseph!</a>
+      <div class="d-flex justify-content-center justify-content-lg-end align-items-center pb-2 pb-lg-0 mx-auto mx-lg-0" style="width:220px">
+        <div class="dropdown">
+          <a class="d-inline-flex align-items-center gap-2 text-dark text-decoration-none font-monospace fw-bold small text-nowrap"
+             href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/dropdown/profile.jpg" alt="Foto profil" width="34" height="34" class="rounded-circle border border-2 border-secondary object-fit-cover">
+            <span class="text-decoration-underline">Hallo Yoseph!</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end mt-4 shadow-sm rounded-4 border border-2 p-3 font-monospace bg-white" data-bs-theme="light" style="--bs-font-monospace:'Orbitron',sans-serif" aria-labelledby="profileDropdown">
+            <li class="d-flex align-items-center gap-3 pb-2">
+              <img src="assets/dropdown/profile.jpg" alt="SETAN IRENG" width="54" height="54" class="rounded-circle border border-2 border-secondary object-fit-cover">
+              <div class="lh-sm"><div class="fw-bold text-nowrap text-black">SETAN IRENG</div><small class="text-secondary">@setan_ireng</small></div>
+            </li>
+            <li><hr class="border-dark border-2"></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-3 rounded-3 py-2 small text-secondary" href="account.html"><i class="bi bi-person fs-5"></i> Pengaturan</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-3 rounded-3 py-2 small text-secondary" href="pesanan_saya.html"><i class="bi bi-box-seam fs-5"></i> Pesanan Saya</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-3 rounded-3 py-2 small text-secondary" href="keranjang.html"><i class="bi bi-cart-plus fs-5"></i> Keranjang</a></li>
+            <li><hr class="border-dark border-2"></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-3 rounded-3 py-2 small fw-bold text-danger-emphasis" href="landing-page.html"><i class="bi bi-box-arrow-right fs-5"></i> Keluar</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

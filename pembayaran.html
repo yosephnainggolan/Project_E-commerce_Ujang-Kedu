@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MICROTECH - Pembayaran</title>
+  <!-- Google Fonts: Orbitron (judul, menu, nama produk) + Inter (deskripsi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS & Bootstrap Icons via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-white d-flex flex-column min-vh-100" style="--bs-primary:#7A0C12;--bs-primary-rgb:122,10,18;--bs-danger:#C00000;--bs-danger-rgb:192,0,0;--bs-danger-bg-subtle:#F2AAAA;--bs-body-font-family:'Inter',sans-serif;--bs-font-monospace:'Orbitron',sans-serif;">
+
+<!-- NAVBAR -->
+<nav id="mainNav" class="navbar navbar-expand-lg sticky-top bg-white border-bottom border-dark" style="min-height:80px;--bs-font-monospace:'Orbitron',sans-serif">
+  <div class="container-fluid" style="padding-left:42px;padding-right:42px">
+    <a class="navbar-brand m-0" href="index.html" style="width:220px;flex:0 0 auto">
+      <div class="ratio ratio-16x9 bg-transparent" style="--bs-aspect-ratio:30%;width:165px">
+        <img id="navLogo" src="assets/kontak/logo-microtech-hitam.png" alt="Logo MICROTECH" class="object-fit-contain">
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigasi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+        <li class="nav-item"><a class="nav-link font-monospace" href="index.html" style="font-size:14px">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link font-monospace" href="about.html" style="font-size:14px">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link font-monospace text-danger border-bottom border-danger" href="produk.html" aria-current="page" style="font-size:14px">Produk</a></li>
+        <li class="nav-item"><a class="nav-link font-monospace" href="contact.html" style="font-size:14px">Kontak</a></li>
+      </ul>
+      <div class="d-flex justify-content-center justify-content-lg-end align-items-center pb-2 pb-lg-0 mx-auto mx-lg-0" style="width:220px">
+        <div class="dropdown">
+          <a class="d-inline-flex align-items-center gap-2 text-dark text-decoration-none font-monospace fw-bold small text-nowrap"
+             href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/dropdown/profile.jpg" alt="Foto profil" width="34" height="34" class="rounded-circle border border-2 border-secondary object-fit-cover">
+            <span class="text-decoration-underline">Hallo Yoseph!</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end mt-4 shadow-sm rounded-4 border border-2 p-3 font-monospace bg-white" data-bs-theme="light" style="--bs-font-monospace:'Orbitron',sans-serif" aria-labelledby="profileDropdown">
+            <li class="d-flex align-items-center gap-3 pb-2">
+              <img src="assets/dropdown/profile.jpg" alt="SETAN IRENG" width="54" height="54" class="rounded-circle border border-2 border-secondary object-fit-cover">
+              <div class="lh-sm"><div class="fw-bold text-nowrap text-black">SETAN IRENG</div><small class="text-secondary">@setan_ireng</small></div>
+            </li>
+            <li><hr class="border-dark border-2"></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-3 rounded-3 py-2 small text-secondary" href="account.html"><i class="bi bi-person fs-5"></i> Pengaturan</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-3 rounded-3 py-2 small text-secondary" href="pesanan_saya.html"><i class="bi bi-box-seam fs-5"></i> Pesanan Saya</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-3 rounded-3 py-2 small text-secondary" href="keranjang.html"><i class="bi bi-cart-plus fs-5"></i> Keranjang</a></li>
+            <li><hr class="border-dark border-2"></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-3 rounded-3 py-2 small fw-bold text-danger-emphasis" href="landing-page.html"><i class="bi bi-box-arrow-right fs-5"></i> Keluar</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- KONTEN UTAMA -->
+  <main class="container py-4">
+    <!-- SECTION 1: BREADCRUMB -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-3 font-monospace small">
+        <li class="breadcrumb-item"><a class="link-dark fw-semibold text-decoration-none" href="produk.html">Katalog</a></li>
+        <li class="breadcrumb-item"><a class="link-dark fw-semibold text-decoration-none" href="isi-produk.html">Produk</a></li>
+        <li class="breadcrumb-item"><a class="link-dark fw-semibold text-decoration-none" href="detail-produk.html">Ether Routers</a></li>
+        <li class="breadcrumb-item active text-danger fw-semibold" aria-current="page">Pembayaran</li>
+      </ol>
+    </nav>
+    <!-- SECTION 2: HALAMAN PEMBAYARAN (dua kolom) -->
+    <div class="bg-body-secondary rounded-4 p-3 p-md-4">
+      <div class="row g-3">
+        <!-- KOLOM KIRI: produk & informasi pembeli -->
+        <div class="col-12 col-lg-6 d-flex flex-column gap-3">
+          <div class="card border-0 rounded-4"><div class="card-body">
+            <!-- Kartu produk yang dibeli -->
+            <div class="fs-4 fw-bold font-monospace mb-3">hEX refresh</div>
+            <div class="ratio ratio-21x9"><img src="assets/ether-routers/hex-s-depan.png" alt="hEX refresh" class="object-fit-contain"></div>
+          </div></div>
+          <div class="card border-0 rounded-4"><div class="card-body">
+            <!-- Kartu informasi pembeli (email, nama, telepon) -->
+            <h2 class="fs-6 fw-bold mb-2">Informasi Pembeli</h2>
+            <label for="f-email" class="form-label small mb-1">Email</label>
+            <input type="email" class="form-control form-control-sm" id="f-email" autocomplete="email">
+            <div class="form-text small lh-sm mb-2">Pastikan email yang Anda masukkan benar, karena kami akan mengirimkan informasi ke email ini</div>
+            <label for="f-name" class="form-label small mb-1">Nama Lengkap</label>
+            <input type="text" class="form-control form-control-sm" id="f-name" autocomplete="name">
+            <div class="form-text small lh-sm mb-2">Gunakan nama yang sesuai dengan KTP atau Kartu Keluarga</div>
+            <label for="f-phone" class="form-label small mb-1">Nomor Telepon</label>
+            <div class="input-group input-group-sm w-75">
+              <select class="form-select flex-grow-0 w-auto" aria-label="Kode negara"><option>🇮🇩 +62</option><option>🇲🇾 +60</option><option>🇸🇬 +65</option></select>
+              <input type="tel" class="form-control" id="f-phone" autocomplete="tel-national">
+            </div>
+          </div></div>
+        </div>
+
+        <!-- KOLOM KANAN: detail pembayaran & metode bayar -->
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 rounded-4 h-100"><div class="card-body p-4">
+            <!-- Rincian harga, PPN & total -->
+            <h2 class="fs-5 fw-bold mb-4">Detail Pembayaran</h2>
+            <div class="d-flex justify-content-between text-secondary"><span>Produk (Ether Routers)</span><span>Rp 1.234.560</span></div>
+            <hr class="border-secondary">
+            <div class="d-flex justify-content-between text-secondary mb-1"><span>Sub Total</span><span>Rp 1.234.560</span></div>
+            <div class="d-flex justify-content-between text-secondary"><span>PPN Produk 10%</span><span>Rp 123.456</span></div>
+            <hr class="border-secondary">
+            <div class="d-flex justify-content-between"><span class="text-secondary">Total</span><span class="fw-bold fs-5 text-secondary">Rp 1.358.016</span></div>
+
+            <!-- Pilihan metode bayar (radio btn-check) -->
+            <div class="d-flex align-items-center gap-3 fw-semibold small my-3">
+              <hr class="flex-grow-1 m-0 border-secondary"><span>Metode Bayar</span><hr class="flex-grow-1 m-0 border-secondary">
+            </div>
+            <input type="radio" class="btn-check" name="metode" id="m-bank" autocomplete="off">
+            <label class="btn btn-light bg-secondary-subtle d-flex justify-content-between align-items-center text-start py-3 mb-3" for="m-bank">
+              <span>Transfer Bank</span>
+              <span class="d-inline-flex gap-2 fw-bold small"><span class="text-primary fst-italic">BCA</span><span class="text-warning">mandiri</span><span class="text-warning-emphasis">BNI</span></span>
+            </label>
+            <input type="radio" class="btn-check" name="metode" id="m-qris" autocomplete="off">
+            <label class="btn btn-light bg-secondary-subtle d-flex justify-content-between align-items-center text-start py-3 mb-3" for="m-qris">
+              <span>QRIS</span><span class="fw-bold small">QRIS</span>
+            </label>
+            <input type="radio" class="btn-check" name="metode" id="m-kartu" autocomplete="off">
+            <label class="btn btn-light bg-secondary-subtle d-flex justify-content-between align-items-center text-start py-3 mb-3" for="m-kartu">
+              <span>Kartu Debit/Kredit</span>
+              <span class="d-inline-flex align-items-center gap-2"><span class="text-primary fst-italic fw-bolder small">VISA</span><span><i class="bi bi-circle-fill text-danger"></i><i class="bi bi-circle-fill text-warning"></i></span></span>
+            </label>
+            <div class="text-center mt-3">
+              <a href="bukti_pembayaran.html" class="btn bg-danger text-white border-0 px-5 py-3 fw-semibold">
+                Bayar Sekarang – Rp 1.358.016
+              </a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!-- FOOTER -->
+<footer class="p-3 font-monospace text-white mt-auto" style="--bs-font-monospace:'Orbitron',sans-serif">
+  <div class="bg-gradient" style="background-color:#14102b;--bs-gradient:linear-gradient(90deg,#6b0f18 0%,#14102b 75%);border-radius:24px;padding:36px">
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-lg-4">
+        <img src="./assets/beranda/logo-microtech-white.png" alt="Logo MICROTECH" width="140" class="img-fluid d-block mb-2">
+        <p class="small mb-0 pe-lg-4">Toko komputer, laptop, part laptop, dan perangkat jaringan.</p>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h6 class="fw-bold small text-white mb-3">MENU</h6>
+        <p class="small mb-0">
+            <a href="index.html" class="text-white text-decoration-none">Home</a> &middot;
+            <a href="about.html" class="text-white text-decoration-none">About</a> &middot;
+            <a href="produk.html" class="text-white text-decoration-none">Product</a> &middot;
+            <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+        </p>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h6 class="fw-bold small text-white mb-3">BANTUAN</h6>
+        <p class="small mb-0 pe-lg-4">
+            <a href="#" class="text-white text-decoration-none">Garansi</a> &middot;
+            <a href="#" class="text-white text-decoration-none">Pengiriman</a> &middot;
+            <a href="#" class="text-white text-decoration-none">Syarat &amp; Ketentuan</a> &middot;
+            <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
+        </p>
+      </div>
+      <div class="col-12 col-lg-2">
+        <h6 class="fw-bold small text-white mb-3">KONTAK</h6>
+        <ul class="list-unstyled d-flex flex-column row-gap-1 small mb-0">
+          <li>Salatiga, Jawa Tengah</li>
+          <li><a href="https://wa.me/6285157474894" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">+62 851-5747-4894</a></li>
+          <li><a href="mailto:micro@tech.id" class="text-white text-decoration-none">micro@tech.id</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-white opacity-75 my-4">
+    <p class="small mb-0 py-2">&copy; 2026 MICROTECH Course. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <!-- Bootstrap 5 JS Bundle (wajib sebelum </body>) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
