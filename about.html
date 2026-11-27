@@ -15,11 +15,11 @@
 <body class="bg-white" style="--bs-primary:#7A0C12;--bs-primary-rgb:122,10,18;--bs-danger:#C00000;--bs-danger-rgb:192,0,0;--bs-danger-bg-subtle:#F2AAAA;--bs-body-font-family:'Inter',sans-serif;--bs-font-monospace:'Orbitron',sans-serif;">
 
 <!-- NAVBAR (sama dengan index; menu "Tentang" aktif) -->
-<nav id="mainNav" class="navbar navbar-expand-lg sticky-top bg-black border-bottom border-secondary" data-bs-theme="dark" style="min-height:80px;--bs-font-monospace:'Orbitron',sans-serif">
+<nav id="mainNav" class="navbar navbar-expand-lg sticky-top bg-black bg-opacity-100 border-bottom border-secondary" data-bs-theme="dark" style="min-height:80px;--bs-font-monospace:'Orbitron',sans-serif">
   <div class="container-fluid" style="padding-left:42px;padding-right:42px">
     <a class="navbar-brand m-0" href="index.html" style="width:220px;flex:0 0 auto">
       <div class="ratio ratio-16x9 bg-transparent" style="--bs-aspect-ratio:30%;width:165px">
-        <img id="navLogo" data-logo-scroll="./assets/landing_page/logo-microtech-white.png" src="./assets/landing_page/logo-microtech-white.png" alt="Logo MICROTECH" class="object-fit-contain">
+        <img src="./assets/landing_page/logo-microtech-white.png" alt="Logo MICROTECH" class="object-fit-contain">
       </div>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigasi">
@@ -65,15 +65,16 @@
   </div>
   <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
   <div class="container-fluid position-relative" style="padding-left:42px;padding-right:42px;padding-top:56px;padding-bottom:56px">
-    <span class="badge bg-primary mb-3 text-wrap text-start" style="font-size:12px;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;border-radius:4px">Tentang Kami</span>
-    <div class="row">
-      <div class="col-lg-5">
-        <h1 class="fw-bold font-monospace" style="font-size:40px;line-height:1.2">Penyedia solusi IT dan perangkat jaringan yang bisa Anda percaya</h1>
-      </div>
-    </div>
-    <div class="row">
+    <div class="row align-items-center g-4 mb-5">
+      <!-- Kiri: teks -->
       <div class="col-lg-8">
-        <p class="text-white mb-5">Perusahaan yang didirikan pada November 2026, kami sebagai perintis <strong>SIAP, DIPERCAYA,</strong> serta <strong>DIANDALKAN</strong> untuk membangun infrastruktur jaringan di seluruh dunia.</p>
+        <span class="badge bg-primary mb-3 text-wrap text-start" style="font-size:12px;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;border-radius:4px">Tentang Kami</span>
+        <h1 class="fw-bold font-monospace" style="font-size:40px;line-height:1.2;max-width:541px">Penyedia solusi IT dan perangkat jaringan yang bisa Anda percaya</h1>
+        <p class="text-white mb-0">Perusahaan yang didirikan pada November 2026, kami sebagai perintis <strong>SIAP, DIPERCAYA,</strong> serta <strong>DIANDALKAN</strong> untuk membangun infrastruktur jaringan di seluruh dunia.</p>
+      </div>
+      <!-- Kanan: logo merah -->
+      <div class="col-lg-4 text-center">
+        <img src="./assets/tentang/logo-red.png" alt="Logo merah MICROTECH" width="254" height="274" class="img-fluid object-fit-contain">
       </div>
     </div>
     <!-- Kartu Visi & Misi -->
@@ -401,21 +402,5 @@
 
   <!-- Bootstrap 5 JS Bundle (wajib sebelum </body>) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Navbar: ikut turun saat scroll; latar jadi gelap-transparan & logo diganti (sama dengan index) -->
-  <script>
-    const nav = document.getElementById('mainNav');
-    const logo = document.getElementById('navLogo');
-    const logoAwal = logo.getAttribute('src');
-    const logoScroll = logo.dataset.logoScroll;
-    function ubahNav() {
-      const scrolled = window.scrollY > 40;
-      nav.classList.toggle('bg-opacity-75', scrolled);
-      nav.classList.toggle('shadow', scrolled);
-      logo.setAttribute('src', scrolled ? logoScroll : logoAwal);
-    }
-    window.addEventListener('scroll', ubahNav, { passive: true });
-    ubahNav();
-  </script>
 </body>
 </html>
